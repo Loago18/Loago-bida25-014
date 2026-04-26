@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Contact Us-Lolzy Kits</title>
+    <link rel="stylesheet" href="style.css">
+ </head>   
+
+ <body>
+ <!--Navigation Bar--> 
+    <table width="100%"> 
+        <tr>
+            <td>
+                <h1>Lolzy Kits</h1>
+            </td>
+            <td align="right">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="order.html"><b>Order Now</b></a>
+            </td>
+        </tr>  
+    </table>
+    <hr>
+
+<!--Page Header-->    
+<table width="100%" border="0">
+    <tr>
+        <td align="center"><h2>Contact Us</h2></td>
+        <td align="right"><img src="images/MUFC.jpg" width="200"></td>
+    </tr>
+</table>
+<hr>
+
+<!--Main Content-->
+<table width="100%" border="0">
+    <tr valign="top">
+
+        <!--Left Column-->
+        <td width="50%">
+
+<p>Address: Gaborone, Botswana</p>
+<p>Phone: +267 76552245</p>
+<p>Email: info@lolzykits.com</p>
+
+<br>
+
+<h3>Social Media Platforms</h3>
+
+<table width="100%" border="0">
+    <tr align="center">
+        <td><img src="images/instagram.jpg.jpg" width="120" height="120"><br>
+        @lolzy_kits_ig
+         </td>
+        <td><img src="images/twitter.jpg.jpg" width="120" height="120"><br>
+        @lolzy_kits_x
+        </td>
+        <td><img src="images/tiktok.jpg.jpg" width="120" height="120"><br>
+        @lolzy_kits_tiktok
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<h3>Opening Hours</h3>
+<p>Monday-Sunday: 24 hours</p>
+        </td>
+
+        <!--Right Column-->
+        <td width="50%">
+
+            <h3>Contact Us</h3>
+            <p> Have a question or need assistance? Send us a message!</p>
+             
+            <form id="contactForm"> 
+                Name:<br>
+                <input type="text"><br>
+                Phone:<br>
+                <input type="tel"><br>
+                Email:<br>
+                <input type="email"><br>
+                Message:<br>
+                <textarea rows="5" cols="40"></textarea><br>
+                <input type="submit" value="Send Message">
+            </form>
+            <p id="sentMessage"></p>
+        </td>
+    </tr>
+  
+<!-- FOOTER -->
+<table width="100%" border="1">
+    <tr>
+        <td align="center">&copy;2025-2026 Lolzy Kits</td>
+    </tr>
+</table>    
+
+<script>
+    /*
+  Contact Form Submission Script
+  ------------------------------
+  Shows a "message sent" confirmation
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  var form = document.getElementById("contactForm");
+  var message = document.getElementById("sentMessage");
+
+  form.addEventListener("submit", function (event) {
+
+    // Stop page refresh
+    event.preventDefault();
+
+    // Hide the form
+    form.style.display = "none";
+
+    // Show success message
+    message.innerHTML =
+      "<b>✅ Message Sent!</b><br><br>Thank you for contacting Lolzy Kits.<br>We will get back to you shortly.";
+
+    message.style.textAlign = "center";
+    message.style.fontSize = "18px";
+    message.style.color = "green";
+    message.style.marginTop = "20px";
+
+  });
+
+});
+</script>
+
+ </body>
+</html>
